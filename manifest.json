@@ -1,0 +1,17 @@
+{
+  "short_name": "Diana Temirkhan",
+  "name": "Diana's portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "homepage":"https://rebirthen.github.io/Portfolio/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "yarn run build",
+		"deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
