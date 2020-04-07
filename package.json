@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://rebirthen.github.io/portfolio/",
+  "homepage":"https://rebirthen.github.io/Portfolio/",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
