@@ -12,7 +12,7 @@ const sections = [
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Header title="Diana Temirkhan" sections={sections} />
         <Route exact path="/" component={Work} />
