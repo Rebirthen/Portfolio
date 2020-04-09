@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, HashRouter } from "react-router-dom";
 import About from "./pages/About";
 import Work from "./pages/Work";
 import Header from "./organisms/Header";
@@ -12,7 +12,7 @@ const sections = [
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <div className="App">
         <Header title="Diana Temirkhan" sections={sections} />
         <Route exact path="/" component={Work} />
@@ -20,7 +20,7 @@ function App() {
         <Footer/>
       </div>
       
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
