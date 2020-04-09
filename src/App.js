@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
 import { Route, HashRouter } from "react-router-dom";
-=======
-import { BrowserRouter, Route, HashRouter } from "react-router-dom";
->>>>>>> 58b7ae2294af8eb76e4fc6b8ca8ac6f64c69be81
 import About from "./pages/About";
 import Work from "./pages/Work";
 import Header from "./organisms/Header";
