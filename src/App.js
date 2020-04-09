@@ -12,7 +12,7 @@ const sections = [
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <HashRouter basename="/Portfolio">
       <div className="App">
         <Header title="Diana Temirkhan" sections={sections} />
         <Route exact path="/" component={Work} />
