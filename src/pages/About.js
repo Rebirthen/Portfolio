@@ -1,12 +1,18 @@
 
 import React from "react";
-import AboutGrid from "../organisms/AboutGrid";
+import AboutAlt from "../templates/AboutAlt";
+import { CssBaseline } from "@material-ui/core";
+import Header from "../organisms/Header";
 
 export default function About() {
 
   return (
-    <div>
-    <AboutGrid/>
-    </div>
+    <React.Fragment>
+    <Header title="Diana Temirkhan"  />
+    <CssBaseline />
+    <main>
+    <AboutAlt/>
+    </main>
+    </React.Fragment>
   );
 }

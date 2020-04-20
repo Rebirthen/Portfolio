@@ -6,10 +6,10 @@ export const WelcomeText = ({ classes }) => {
   return (
     <div className={classes.heroContent}>
       <Container maxWidth="sm">
-        <Typography component="h1" variant="h3" align="center" paragraph>
+        <Typography variant="h4" align="center" paragraph>
           Hi, I'm Diana!
         </Typography>
-        <Typography variant="h3" align="center" paragraph>
+        <Typography variant="h4" align="center" paragraph>
           I’m a Software Developer at{" "}
           <StrongLink
             classes={classes}

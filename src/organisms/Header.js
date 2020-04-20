@@ -7,8 +7,12 @@ import PureMenu from "./../molecules/PureMenu";
 
 export default function Header(props) {
   const classes = useMenuStyles();
-  const { sections, title } = props;
-  let pageUrl = window.location.href;
+  const {  title } = props;
+
+  const sections = [
+    { title: "Work", url: "/Portfolio/#" ,name:""},
+    { title: "About", url: "/Portfolio/#/about" ,name:"about"}
+  ];
   return (
     <React.Fragment>
       <Toolbar className={classes.toolbar}>
@@ -23,7 +27,7 @@ export default function Header(props) {
           {title}
         </Typography>
 
-        <PureMenu sections={sections} pageUrl={pageUrl} classes={classes} />
+        <PureMenu sections={sections} classes={classes} />
       </Toolbar>
     </React.Fragment>
   );

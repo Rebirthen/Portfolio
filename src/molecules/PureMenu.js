@@ -3,10 +3,12 @@
 import React from "react";
 import PureLink from "./../atoms/PureLink";
 
-function PureMenu({ sections, pageUrl, classes }) {
-  return sections.map(({ title, url }) => {
+function PureMenu({ sections,classes }) {
+ 
+  return sections.map(({ title, url,name}) => {
+    let pageUrl = window.location.href;
     let isActive =
-      pageUrl.substr(pageUrl.lastIndexOf("/") + 1) === url.replace("/", "");
+      pageUrl.substr(pageUrl.lastIndexOf("/") + 1) === name;
     return (
       <PureLink
         isActive={isActive}

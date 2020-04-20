@@ -4,11 +4,9 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-import { workStyles } from "./../styles/WorkStyle";
 import Link from "@material-ui/core/Link";
 
-export const Projects = ({ cards }) => {
-  const classes = workStyles();
+export const Projects = ({ cards,classes }) => {
   return (
     <Container className={classes.cardGrid}>
       <Typography variant="h7" align="center" color="textSecondary" paragraph>

@@ -3,6 +3,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { workStyles } from "./../styles/WorkStyle";
 import { WelcomeText } from "./../templates/WelcomeText";
 import { Projects } from "./../organisms/Projects";
+import Header from "../organisms/Header";
 
 const cards = [
   {
@@ -29,7 +30,7 @@ const cards = [
   {
     title: "Weather",
     heading: "Weather",
-    url: "https://www.rebirthen.github.io/",
+    url: "https://www.rebirthen.github.io/weather",
     image: "weather-app.png",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
   }
@@ -40,10 +41,11 @@ export default function Work() {
 
   return (
     <React.Fragment>
+    <Header title="Diana Temirkhan"  />
       <CssBaseline />
       <main>
         <WelcomeText classes={classes} />
-        <Projects cards={cards} />
+        <Projects cards={cards} classes={classes} />
       </main>
     </React.Fragment>
   );
